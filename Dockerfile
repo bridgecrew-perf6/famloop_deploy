@@ -27,8 +27,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # RUN code-server --install-extension esbenp.prettier-vscode
 
 # Install apt packages:
-# RUN sudo apt-get install -y ubuntu-make
-
+RUN sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
 
